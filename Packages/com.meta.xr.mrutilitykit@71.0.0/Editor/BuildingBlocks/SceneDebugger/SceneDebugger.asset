@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c4ad19f06c67e44a2d7ba8d05f31b7, type: 3}
+  m_Name: SceneDebugger
+  m_EditorClassIdentifier: 
+  id: 8ac24146-90e9-4802-8a61-9d72ceaa2450
+  version: 1
+  blockName: Scene Debugger
+  description: Helps with debugging scene data
+  tags:
+    array:
+    - name: Scene
+  thumbnail: {fileID: 2800000, guid: 38f69350382be7f4887ee22dcc0d4b2c, type: 3}
+  order: 5
+  prefab: {fileID: 8477560934378440801, guid: 61049dfb4690be642a843757d529ca97, type: 3}
+  externalBlockDependencies: []
+  dependencies:
+  - d4413f4f-542f-451f-92ee-4801f27d676a
+  - 8b26b298-7bf4-490e-b245-a039c0184303
+  - e47682b9-c270-40b1-b16d-90b627a5ce1b
+  - 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
+  packageDependencies: []
+  isSingleton: 1
+  usageInstructions: 

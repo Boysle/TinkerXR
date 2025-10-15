@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020b12e8a977ecb4a96e9066190a2766, type: 3}
+  m_Name: FindSpawnPositions
+  m_EditorClassIdentifier: 
+  id: 93762ef0-9738-45f4-bb87-bdb9a0acb994
+  version: 1
+  blockName: Find Spawn Positions
+  description: Search a scene for suitable locations to place content
+  tags:
+    array:
+    - name: Anchor
+    - name: Helper
+    - name: Scene
+  thumbnail: {fileID: 2800000, guid: b5c5be7e0b904844aa95ba4b9a80d254, type: 3}
+  order: 5
+  prefab: {fileID: 924406752040691048, guid: 2c79091165ddb24409b0a91f0d71bba0, type: 3}
+  externalBlockDependencies: []
+  dependencies:
+  - d4413f4f-542f-451f-92ee-4801f27d676a
+  packageDependencies: []
+  isSingleton: 0
+  usageInstructions: 

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1416325680687532416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416325680687532422}
+  - component: {fileID: 1416325680687532423}
+  m_Layer: 0
+  m_Name: JSONTestHelper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1416325680687532422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416325680687532416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416325680687532423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416325680687532416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f939b1edddc824d8ce1c774e5d29c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultRoomNoAnchors: {fileID: 4900000, guid: 1d44c12584a82fd41bcc62a45c7c3eb6, type: 3}
+  SceneWithRoom1: {fileID: 4900000, guid: 6ecade961a84f434ab740b54e210472f, type: 3}
+  SceneWithRoom2: {fileID: 4900000, guid: dfb5b7003748b1d4d8dddb7dfb225304, type: 3}
+  SceneWithScene1NewRoomGUID: {fileID: 4900000, guid: 3c94f785919740b4aa43ba6b74bf5ced, type: 3}
+  SceneWithRoom1SceneAnchorLabelChanged: {fileID: 4900000, guid: 7262f7c398672c54a8cc21f16b688178, type: 3}
+  SceneWithRoom1SceneAnchorPlaneRectChanged: {fileID: 4900000, guid: 2aac14585be7ecf4cb1811ce78d18afc, type: 3}
+  SceneWithRoom1SceneAnchorVolumeBoundsChanged: {fileID: 4900000, guid: 6a71ac3f9c5592b4fa47f0a92f78b397, type: 3}
+  SceneWithRoom1SceneAnchorPlaneBoundaryChanged: {fileID: 4900000, guid: 28556fe97d62e204c8ed7402bc03ffc7, type: 3}
+  SceneWithRoom1Room3: {fileID: 4900000, guid: 1a970c5bb2e64694399790150ab89991, type: 3}
+  SceneWithRoom3Room1: {fileID: 4900000, guid: 81fb780178c63354ba2327861e770b3d, type: 3}
+  SceneWithRoom1MoreAnchors: {fileID: 4900000, guid: 8c3c5fde423fb014b85db364ee212f3a, type: 3}
+  SceneWithRoom1LessAnchors: {fileID: 4900000, guid: 52a6ad6da7715b34c98dbb115c3ad31d, type: 3}
+  UnityExpectedSerializedScene: {fileID: 4900000, guid: 49c29501d7bdd2f408965b1ff74f87ff, type: 3}
+  UnrealExpectedSerializedScene: {fileID: 4900000, guid: 311bd7295fa3c0940bcc0a3bf9948967, type: 3}
+  HierarchyObjects: {fileID: 4900000, guid: e1d17dd044806c345ae79b772dd556ab, type: 3}
+  SceneWithRoomMesh: {fileID: 0}

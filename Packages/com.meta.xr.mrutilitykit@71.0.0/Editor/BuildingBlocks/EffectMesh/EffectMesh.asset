@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c4ad19f06c67e44a2d7ba8d05f31b7, type: 3}
+  m_Name: EffectMesh
+  m_EditorClassIdentifier: 
+  id: 65c6e778-10b3-4490-89da-008a18aa116a
+  version: 1
+  blockName: Effect Mesh
+  description: Creates special-effect meshes out of the Scene objects you specify
+  tags:
+    array:
+    - name: Scene
+  thumbnail: {fileID: 2800000, guid: 0ff624bc672ccb747bc6de18bf390568, type: 3}
+  order: 5
+  prefab: {fileID: 5456522116536683071, guid: cee191920b8eb41b0960b1082a393a3e, type: 3}
+  externalBlockDependencies: []
+  dependencies:
+  - d4413f4f-542f-451f-92ee-4801f27d676a
+  packageDependencies: []
+  isSingleton: 0
+  usageInstructions: 

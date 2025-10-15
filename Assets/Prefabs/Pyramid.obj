@@ -1,0 +1,27 @@
+# Object Export From Tinkercad Server 2015
+
+mtllib obj.mtl
+
+o obj_0
+v 10 		-8 		10
+v 10 		-8 		-10
+v 0 		8 		0
+v -10 		-8 		-10
+v -10 		-8 		10
+# 5 vertices
+
+g group_0_16768282
+
+usemtl color_16768282
+s 0
+
+f 1 	2 	3
+f 2 	4 	3
+f 5 	4 	2
+f 5 	2 	1
+f 5 	1 	3
+f 4 	5 	3
+# 6 faces
+
+ #end of obj_0
+

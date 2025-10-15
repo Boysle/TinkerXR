@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3367fd397612734a9082b138dc9afad, type: 3}
+  m_Name: MRUtilityKit
+  m_EditorClassIdentifier: 
+  id: d4413f4f-542f-451f-92ee-4801f27d676a
+  version: 1
+  blockName: MR Utility Kit
+  description: The base block of MR Utility Kit, which loads the room and is prerequisite
+    for other tools
+  tags:
+    array:
+    - name: Hidden
+    - name: New
+  thumbnail: {fileID: 0}
+  order: 0
+  prefab: {fileID: 984354080134106425, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+  externalBlockDependencies: []
+  dependencies:
+  - e47682b9-c270-40b1-b16d-90b627a5ce1b
+  packageDependencies: []
+  isSingleton: 1
+  usageInstructions: 

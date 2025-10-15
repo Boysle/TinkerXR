@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c4ad19f06c67e44a2d7ba8d05f31b7, type: 3}
+  m_Name: RoomGuardian
+  m_EditorClassIdentifier: 
+  id: 715d6e5e-2d15-475d-9b2b-43ce3eca2f3d
+  version: 1
+  blockName: Room Guardian
+  description: Creates a Guardian-like protective mesh
+  tags:
+    array:
+    - name: Scene
+  thumbnail: {fileID: 2800000, guid: a7f4c54f9844aef41a0f9c29c538e084, type: 3}
+  order: 5
+  prefab: {fileID: 5456522116536683071, guid: 5d3c52234cffb412595fe970f51c6342, type: 3}
+  externalBlockDependencies: []
+  dependencies:
+  - d4413f4f-542f-451f-92ee-4801f27d676a
+  packageDependencies: []
+  isSingleton: 1
+  usageInstructions: 

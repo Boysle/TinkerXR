@@ -1,0 +1,87 @@
+{
+  "name": "com.meta.xr.mrutilitykit",
+  "displayName": "Meta MR Utility Kit",
+  "version": "71.0.0",
+  "description": "Helper tools & functions to simplify development with Scene API. Works on Mac & PC, without a device attached.",
+  "samples": [
+    {
+      "displayName": "Basic",
+      "description": "A basic scene showing the core functionality of MR Utility Kit",
+      "path": "Samples~/Basic"
+    },
+    {
+      "displayName": "Floor Zone",
+      "description": "A scene showing how to find a floor zone",
+      "path": "Samples~/FloorZone"
+    },
+    {
+      "displayName": "Multi Spawn",
+      "description": "A scene showing how to spawn objects in different locations within the room",
+      "path": "Samples~/MultiSpawn"
+    },
+    {
+      "displayName": "Nav Mesh",
+      "description": "A scene showing how to create a nav mesh for navigation",
+      "path": "Samples~/NavMesh"
+    },
+    {
+      "displayName": "Virtual Home",
+      "description": "A scene showing the prefab spawner functionality",
+      "path": "Samples~/VirtualHome"
+    },
+    {
+      "displayName": "Passthrough Relighting",
+      "description": "A scene showing the effect of virtual shadows and highlights on scene objects",
+      "path": "Samples~/PassthroughRelighting"
+    },
+    {
+      "displayName": "Bouncing Ball",
+      "description": "A scene showing virtual balls interacting with physical environment",
+      "path": "Samples~/BouncingBall"
+    },
+    {
+      "displayName": "Scene Decorator",
+      "description": "A scene with basic decorations and SceneDecorator to populate the environment",
+      "path": "Samples~/SceneDecorator"
+    },
+    {
+      "displayName": "Destructible Mesh",
+      "description": "A scene showing how to spawn a global mesh that can be segmented, usually used to create destructible environments",
+      "path": "Samples~/DestructibleMesh"
+    },
+    {
+      "displayName": "Environment Panel Placement (Beta)",
+      "description": "A scene showing how to use EnvironmentRaycastManager to attach virtual panel to physical environment.",
+      "path": "Samples~/EnvironmentPanelPlacement"
+    },
+    {
+      "displayName": "Space Map",
+      "description": "A scene with the SpaceMap prefab added. It creates a texture which represents the room with a color gradient according to the settings of the prefab.",
+      "path": "Samples~/SpaceMap"
+    },
+    {
+      "displayName": "Keyboard Tracking",
+      "description": "A scene demonstrating generic keyboard detection and tracking. This sample requires Scene permission.",
+      "path": "Samples~/AnchorTracker"
+    }
+  ],
+  "unity": "2021.3",
+  "unityRelease": "26f1",
+  "author": {
+    "name": "Meta Platforms, Inc.",
+    "url": "https://developer.oculus.com/"
+  },
+  "licensesUrl": "https://developer.oculus.com/licenses/oculussdk",
+  "licenseMessage": "By adding or using this package you agree to the terms and conditions of the Meta Platforms Technologies SDK License Agreement: https://developer.oculus.com/licenses/oculussdk",
+  "keywords": [
+    "Meta"
+  ],
+  "dependencies": {
+    "com.unity.ai.navigation": "1.1.4",
+    "com.unity.nuget.newtonsoft-json": "3.0.2",
+    "com.meta.xr.sdk.core": "71.0.0",
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "documentationUrl": "https://developer.oculus.com/documentation/unity/unity-mr-utility-kit-overview",
+  "changelogUrl": "https://developer.oculus.com/downloads/package/meta-xr-mr-utility-kit-upm/"
+}

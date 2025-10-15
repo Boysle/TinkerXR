@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9182726067196074016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad069f85873d4f04a8e07429e613ecc3, type: 3}
+  m_Name: InsideCurrentRoomMask
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efacc41b4d21cfa458fd5af8b13d5803, type: 3}
+  m_Name: Cube_Grid_Floor_NotInside_GlobalMesh
+  m_EditorClassIdentifier: 
+  Poolsize: 2000
+  decorationPrefabs:
+  - {fileID: 1847491601760391615, guid: 85f5e53a938c705408ba49d8c1522476, type: 3}
+  executeSceneLabels: 1
+  targets: 5
+  targetPhysicsLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  placement: 0
+  placementDirection: {x: 0, y: 0, z: -1}
+  selectBehind: 0
+  rayOffset: {x: 0, y: 0, z: 0.1}
+  spawnHierarchy: 0
+  distributionType: 0
+  gridDistribution:
+    spacingX: 1
+    spacingY: 1
+  simplexDistribution:
+    pointSamplingConfig:
+      pointsPerUnitX: 0
+      pointsPerUnitY: 0
+      noiseOffsetRadius: 0
+  staggeredConcentricDistribution:
+    stepSize: 0
+  randomDistribution:
+    numPerUnit: 10
+  masks:
+  - {fileID: 7735244781966375240}
+  - {fileID: 372123287010497057}
+  - {fileID: -9182726067196074016}
+  constraints:
+  - name: Not Inside
+    enabled: 1
+    mask: {fileID: 7735244781966375240}
+    modeCheck: 1
+    min: 0
+    max: 0
+  modifiers:
+  - {fileID: 5772162110286859216}
+  discardParentScaling: 1
+  lifetime: 0
+  DrawDebugRaysAndImpactPoints: 0
+--- !u!114 &372123287010497057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7820776d2dedf42ba036ce519acb73, type: 3}
+  m_Name: ConstantMask
+  m_EditorClassIdentifier: 
+  constant: 1
+--- !u!114 &5772162110286859216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb460de1610eb6479b3a63a1af14a0e, type: 3}
+  m_Name: ScaleModifier
+  m_EditorClassIdentifier: 
+  enabled: 1
+  x:
+    mask: {fileID: 372123287010497057}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0
+  y:
+    mask: {fileID: 372123287010497057}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0
+  z:
+    mask: {fileID: 372123287010497057}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0
+--- !u!114 &7735244781966375240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196104766fa4d04a4983296d494ce5d, type: 3}
+  m_Name: NotInsideMask
+  m_EditorClassIdentifier: 
+  Labels: 73624

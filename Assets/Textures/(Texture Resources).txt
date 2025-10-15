@@ -1,0 +1,14 @@
+BackSpace Icon: https://iconduck.com/icons/31137/backspace (open sourced)
+Copy Icon: <a href="https://www.flaticon.com/free-icons/copy" title="copy icons">Copy icons created by Catalin Fertu - Flaticon</a>
+Paste Icon: <a href="https://www.flaticon.com/free-icons/file" title="file icons">File icons created by JessiGue - Flaticon</a>
+Done Icon: <a href="https://www.flaticon.com/free-icons/done" title="done icons">Done icons created by Freepik - Flaticon</a>
+Ruler Icon: <a href="https://www.flaticon.com/free-icons/ruler" title="ruler icons">Ruler icons created by Aranagraphics - Flaticon</a>
+Carving Icon: https://www.freepik.com/icon/carving_1193201
+3D Printer Icon: <a href="https://www.freeiconspng.com/img/13048">3d printer interface symbol</a>
+Improt Icon: https://www.svgrepo.com/svg/17434/import
+Export Icon: https://www.svgrepo.com/svg/62103/export
+Glue Icon: https://www.freepik.com/icon/glue_1166981
+Save Icon: https://www.svgrepo.com/svg/325571/save-action-floppy
+Load Icon: https://www.svgrepo.com/svg/325350/load-action-floppy
+Free Movement Icon: https://www.freepik.com/icon/move_271222?log-in=google
+Snap to Grid Icon: Snap to Grid by Guilherme Simoes from <a href="https://thenounproject.com/browse/icons/term/snap-to-grid/" target="_blank" title="Snap to Grid Icons">Noun Project</a> (CC BY 3.0)

@@ -1,0 +1,100 @@
+/*
+* Copyright (c) Meta Platforms, Inc. and affiliates.
+* All rights reserved.
+*
+* Licensed under the Oculus SDK License Agreement (the "License");
+* you may not use the Oculus SDK except in compliance with the License,
+* which is provided at the time of installation or download, or which
+* otherwise accompanies this software in either electronic or hard copy form.
+*
+* You may obtain a copy of the License at
+*
+* https://developer.oculus.com/licenses/oculussdk/
+*
+* Unless required by applicable law or agreed to in writing, the Oculus SDK
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+#pragma kernel SpaceMap
+#pragma kernel FillSpaceMap
+#pragma kernel PrepareSpaceMap
+
+int Width;
+int Height;
+int Step;
+
+RWTexture2D<float4> Result;
+
+Texture2D<float4> Source;
+
+[numthreads(8,8,1)]
+void PrepareSpaceMap(uint3 id : SV_DispatchThreadID) {
+
+  //floor = red
+  //scene = green
+  float2 pos = id.xy;
+  float2 newPos = float2(-1,-1);
+  float2 newPos2 = float2(-1,-1);
+
+  float4 color = Source[pos];
+  // check for floor/wall
+  if (color.y > 0){
+    newPos = pos;
+  }
+  //check for scene objects
+  if (max(color.x,color.z) > 0){
+    newPos2 = pos;
+  }
+  Result[id.xy] = float4(newPos.x,newPos.y,newPos2.x,newPos2.y);
+}
+
+[numthreads(8,8,1)]
+void SpaceMap (uint3 id : SV_DispatchThreadID)
+{
+  float2 pos = id.xy;
+  float2 bestUV = float2(-1,-1);
+  float2 bestUV2 = float2(-1,-1);
+
+  float bestDist1 = 100000;
+  float bestDist2 = 100000;
+
+
+  for (int y = -1; y <= 1; y++)
+  {
+    for (int x = -1; x <= 1; x++)
+    {
+      const float2 checkPos = pos + (float2(x, y) * Step);
+      float2 tempValue = Source[checkPos].xy;
+
+      float dist = length(tempValue.xy - pos);
+      if (dist < bestDist1 && tempValue.x >= 0 && tempValue.y >= 0)
+      {
+        bestUV = tempValue.xy;
+        bestDist1 = dist;
+      }
+      tempValue = Source[checkPos].zw;
+      dist = length(tempValue.xy - pos);
+      if (dist < bestDist2 && tempValue.x >= 0 && tempValue.y >= 0)
+      {
+        bestUV2 = tempValue.xy;
+        bestDist2 = dist;
+      }
+    }
+  }
+  Result[pos] = float4(bestUV.xy,bestUV2.xy);
+}
+
+[numthreads(8,8,1)]
+void FillSpaceMap (uint3 id : SV_DispatchThreadID)
+{
+  float2 info = Source[id.xy].xy / float2(Width,Height);
+  float2 info2 = Source[id.xy].zw / float2(Width,Height);
+  float2 idnorm = id.xy / float2(Width,Height);
+
+  float dist = distance(info,idnorm)/0.1;
+  float dist2 = distance(info2,idnorm)/0.1;
+
+  Result[id.xy] = float4(dist,dist,dist2,dist2);
+}

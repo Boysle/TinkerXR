@@ -1,0 +1,78 @@
+[
+    {
+        "name": "ultimaker_s3",
+        "label": "Ultimaker S3",
+        "cmd": "bash -c 'source /app/Cura/venv/bin/activate && python3 /app/Cura/cura_app.py --headless --support-enable %%support_enable%% --support-structure %%support_structure%% --layer-height %%layer_height%% --infill-sparse-density %%infill_sparse_density%% --infill-pattern %%infill_pattern%% --output-gcode %%gcode_path%% %%stl_path%%'",
+        "options": [
+            {
+                "name": "support_enable",
+                "label": "Enable Support",
+                "default": "true",
+                "values": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "name": "support_structure",
+                "label": "Support Structure",
+                "default": "tree",
+                "values": [
+                    "tree",
+                    "normal"
+                ]
+            },
+            {
+                "name": "layer_height",
+                "label": "Layer Height",
+                "default": "0.2",
+                "values": [
+                    "0.06",
+                    "0.1",
+                    "0.15",
+                    "0.2",
+                    "0.3"
+                ]
+            },
+            {
+                "name": "infill_sparse_density",
+                "label": "Infill Density",
+                "default": "30",
+                "values": [
+                    "0",
+                    "10",
+                    "20",
+                    "30",
+                    "40",
+                    "50",
+                    "60",
+                    "70",
+                    "80",
+                    "90",
+                    "100"
+                ]
+            },
+            {
+                "name": "infill_pattern",
+                "label": "Infill Pattern",
+                "default": "grid",
+                "values": [
+                    "grid",
+                    "lines",
+                    "triangles",
+                    "trihexagon",
+                    "cubic",
+                    "cubicsubdiv",
+                    "tetrahedral",
+                    "quarter_cubic",
+                    "concentric",
+                    "zigzag",
+                    "cross",
+                    "cross_3d",
+                    "gyroid",
+                    "lightning"
+                ]
+            }
+        ]
+    }
+]

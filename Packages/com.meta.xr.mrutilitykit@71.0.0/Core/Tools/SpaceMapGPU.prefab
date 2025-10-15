@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7565690009007541679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7565690009007541677}
+  - component: {fileID: 7565690009007541650}
+  m_Layer: 0
+  m_Name: SpaceMapGPU
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7565690009007541677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565690009007541679}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7565690009007541650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565690009007541679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bcfe65610b276478393c2ee174babf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <SpaceMapCreatedEvent>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  <SpaceMapUpdatedEvent>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  CreateOnStart: 2
+  TextureDimension: 512
+  MapGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 0, g: 0, b: 0, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 40092
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  gradientMaterial: {fileID: 2100000, guid: 1cc763fb3d24f5843acd98f8b4dfa804, type: 2}
+  CSSpaceMap: {fileID: 7200000, guid: 59e8a77a6e68f9e4ead6050275ee7c0c, type: 3}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  SceneObjectLabels: 8088
+  InsideObjectColor: {r: 0, g: 0.053680897, b: 1, a: 0}
+  CameraCaptureBorderBuffer: 2
+  CreateOutputTexture: 1
+  OutputTexture: {fileID: 2800000, guid: 66f900de077201e439e789d69e676228, type: 3}
+  DebugPlane: {fileID: 0}
+  ShowDebugPlane: 1
+  RenderTexture: {fileID: 8400000, guid: eea0cd374eefe6041a9033d26f6c1121, type: 2}

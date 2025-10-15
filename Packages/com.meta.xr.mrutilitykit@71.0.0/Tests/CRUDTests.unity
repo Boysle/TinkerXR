@@ -1,0 +1,774 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &479395046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479395047}
+  m_Layer: 0
+  m_Name: RightControllerInHandAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479395047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479395046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 873809815}
+  m_Father: {fileID: 1899062736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &556001693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556001694}
+  m_Layer: 0
+  m_Name: LeftControllerInHandAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556001694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556001693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1840999654}
+  m_Father: {fileID: 1899062737}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &873809814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873809815}
+  m_Layer: 0
+  m_Name: RightHandOnControllerAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873809815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873809814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 479395047}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1158061018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158061019}
+  m_Layer: 0
+  m_Name: RightHandAnchorDetached
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1158061019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158061018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1899062735}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1315984515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315984516}
+  m_Layer: 0
+  m_Name: LeftHandAnchorDetached
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315984516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315984515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1899062735}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1840999653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1840999654}
+  m_Layer: 0
+  m_Name: LeftHandOnControllerAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1840999654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840999653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 556001694}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1899062734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_Name
+      value: OVRCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+--- !u!4 &1899062735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1899062734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1899062736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1899062734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1899062737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1899062734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1928278611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 984354080134106425, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_Name
+      value: MRUK
+      objectReference: {fileID: 0}
+    - target: {fileID: 3613868102660323786, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: SceneSettings.SceneJson
+      value: '        {             "CoordinateSystem": "Unity",             "Rooms":
+        [                 {                     "UUID": "26621F6BC6E04FC09FF7F37167AD92B7",                    
+        "RoomLayout": {                         "FloorUuid": "B36F3D4FDD3C4E05A9591402F93F61E5",                        
+        "CeilingUuid": "24A8F474833744DFB02C488A9BA111E8",                        
+        "WallsUUid": [                             "91C4D6D7094448EEA20403AE86EE6EC1",                            
+        "33800E8EB9EE4C138FDE577C993EA90B",                             "A6282AA1CE7B446388350D3D92A48848",                            
+        "EE8EAAA0CEC14186B1FF44A9DF52A2B1",                             "F822A765695745529594E95CA5B92E8C",                            
+        "4D96ABFBDD3744EDB7BF1417081005FD",                             "799EB9126BD94EFDA93418DDBEB28B99"                        
+        ]                     },                     "Anchors": [                        
+        {                             "UUID": "B36F3D4FDD3C4E05A9591402F93F61E5",                            
+        "SemanticClassifications": [                               "FLOOR"                            
+        ],                             "Transform": {                              
+        "Translation": [-1.06952024,0.0,1.2340889],                              
+        "Rotation": [270.0,273.148438,0.0],                               "Scale":
+        [1.0,1.0,1.0]                             },                            
+        "PlaneBounds": {                               "Min": [-3.16107464,-3.18514252],                              
+        "Max": [3.16107464,3.18514252]                             },                            
+        "PlaneBoundary2D": [                               [-0.614610434,3.14264679],                              
+        [-3.1610744,3.185142],                               [-3.16107464,-0.628885269],                              
+        [0.0159805864,-0.3973337],                               [-0.00542993844,-3.17527843],                              
+        [3.121027,-3.18514252],                               [3.16107488,-0.4239784],                              
+        [3.05573153,2.90878654]                             ]                          
+        },                           {                             "UUID": "24A8F474833744DFB02C488A9BA111E8",                            
+        "SemanticClassifications": [                               "CEILING"                            
+        ],                             "Transform": {                              
+        "Translation": [-1.06952024,3.0,1.2340889],                              
+        "Rotation": [90.0,93.14846,0.0],                               "Scale": [1.0,1.0,1.0]                            
+        },                             "PlaneBounds": {                              
+        "Min": [-3.16107464,-3.18514252],                               "Max": [3.16107464,3.18514252]                            
+        },                             "PlaneBoundary2D": [                              
+        [-3.05573153,2.90878654],                               [-3.16107488,-0.423978329],                              
+        [-3.121027,-3.18514252],                               [0.00542993844,-3.17527819],                              
+        [-0.0159805864,-0.397333622],                               [3.16107464,-0.628885269],                              
+        [3.1610744,3.18514228],                               [0.614610434,3.14264679]                            
+        ]                           },                         {                            
+        "UUID": "91C4D6D7094448EEA20403AE86EE6EC1",                             "SemanticClassifications":
+        [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     1.71035528,                                    
+        1.5,                                     1.268393                                
+        ],                                 "Rotation": [                                    
+        0,                                     248.437622,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -0.8823391,                                     -1.5                                
+        ],                                 "Max": [                                    
+        0.8823391,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -0.8823391,                                    
+        -1.5                                 ],                                 [                                    
+        0.8823391,                                     -1.5                                
+        ],                                 [                                    
+        0.8823391,                                     1.5                                
+        ],                                 [                                    
+        -0.8823391,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "33800E8EB9EE4C138FDE577C993EA90B",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     0.3914528,                                    
+        1.5,                                     2.15365982                                
+        ],                                 "Rotation": [                                    
+        0,                                     183.720367,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -0.9967317,                                     -1.5                                
+        ],                                 "Max": [                                    
+        0.9967317,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -0.9967317,                                    
+        -1.5                                 ],                                 [                                    
+        0.9967317,                                     -1.5                                
+        ],                                 [                                    
+        0.9967317,                                     1.5                                
+        ],                                 [                                    
+        -0.9967317,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "A6282AA1CE7B446388350D3D92A48848",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     -0.9457869,                                    
+        1.5,                                     1.72746456                                
+        ],                                 "Rotation": [                                    
+        0,                                     124.913544,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -0.5986103,                                     -1.5                                
+        ],                                 "Max": [                                    
+        0.5986103,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -0.5986103,                                    
+        -1.5                                 ],                                 [                                    
+        0.5986103,                                     -1.5                                
+        ],                                 [                                    
+        0.5986103,                                     1.5                                
+        ],                                 [                                    
+        -0.5986103,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "EE8EAAA0CEC14186B1FF44A9DF52A2B1",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     -1.49773419,                                    
+        1.5,                                     -0.343039751                                
+        ],                                 "Rotation": [                                    
+        0,                                     97.54905,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -1.59344471,                                     -1.5                                
+        ],                                 "Max": [                                    
+        1.59344471,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -1.59344471,                                    
+        -1.5                                 ],                                 [                                    
+        1.59344471,                                     -1.5                                
+        ],                                 [                                    
+        1.59344471,                                     1.5                                
+        ],                                 [                                    
+        -1.59344471,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "F822A765695745529594E95CA5B92E8C",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     -1.22031093,                                    
+        1.5,                                     -1.98077047                                
+        ],                                 "Rotation": [                                    
+        0,                                     6.806239,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -0.4902168,                                     -1.5                                
+        ],                                 "Max": [                                    
+        0.4902168,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -0.4902168,                                    
+        -1.5                                 ],                                 [                                    
+        0.4902168,                                     -1.5                                
+        ],                                 [                                    
+        0.4902168,                                     1.5                                
+        ],                                 [                                    
+        -0.4902168,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "4D96ABFBDD3744EDB7BF1417081005FD",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     0.6066754,                                    
+        1.5,                                     -2.05464935                                
+        ],                                 "Rotation": [                                    
+        0,                                     0.674668849,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -1.34031725,                                     -1.5                                
+        ],                                 "Max": [                                    
+        1.34031725,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -1.34031725,                                    
+        -1.5                                 ],                                 [                                    
+        1.34031725,                                     -1.5                                
+        ],                                 [                                    
+        1.34031725,                                     1.5                                
+        ],                                 [                                    
+        -1.34031725,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "799EB9126BD94EFDA93418DDBEB28B99",                            
+        "SemanticClassifications": [                                 "WALL_FACE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     1.99076307,                                    
+        1.5,                                     -0.8113152                                
+        ],                                 "Rotation": [                                    
+        0,                                     271.995178,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -1.25988054,                                     -1.5                                
+        ],                                 "Max": [                                    
+        1.25988054,                                     1.5                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -1.25988054,                                    
+        -1.5                                 ],                                 [                                    
+        1.25988054,                                     -1.5                                
+        ],                                 [                                    
+        1.25988054,                                     1.5                                
+        ],                                 [                                    
+        -1.25988054,                                     1.5                                
+        ]                             ]                         },                        
+        {                             "UUID": "6853E03AE54E4DE9A82D8AC151BF00AC",                            
+        "SemanticClassifications": [                                 "OTHER"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     0.95,                                    
+        1.0874939,                                     1.63                                
+        ],                                 "Rotation": [                                    
+        270,                                     5.721004,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "VolumeBounds":
+        {                                 "Min": [                                    
+        -0.398986936,                                     -0.432495117,                                    
+        -1.08197021                                 ],                                
+        "Max": [                                     0.398986936,                                    
+        0.432495117,                                     0                                
+        ]                             }                         },                        
+        {                             "UUID": "D767E0E46C1742A88813BFA49B8B28F0",                            
+        "SemanticClassifications": [                                 "OTHER"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     -1.22,                                    
+        1.27151489,                                     -1.72                                
+        ],                                 "Rotation": [                                    
+        270,                                     96.27296,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "VolumeBounds":
+        {                                 "Min": [                                    
+        -0.199005172,                                     -0.401000977,                                    
+        -1.26599121                                 ],                                
+        "Max": [                                     0.199005172,                                    
+        0.401000977,                                     0                                
+        ]                             }                         },                        
+        {                             "UUID": "CAE852DB8847498F8A5812EA04F6C1F6",                            
+        "SemanticClassifications": [                                 "TABLE"                            
+        ],                             "Transform": {                                
+        "Translation": [                                     1.555448,                                    
+        1.06253052,                                     -0.8596737                                
+        ],                                 "Rotation": [                                    
+        270,                                     1.2390064,                                    
+        0                                 ],                                 "Scale":
+        [                                     1,                                    
+        1,                                     1                                
+        ]                             },                             "PlaneBounds":
+        {                                 "Min": [                                    
+        -0.400512785,                                     -0.9039919                                
+        ],                                 "Max": [                                    
+        0.400512785,                                     0.9039919                                
+        ]                             },                             "VolumeBounds":
+        {                                 "Min": [                                    
+        -0.400512785,                                     -0.9039919,                                    
+        -1.05700684                                 ],                                
+        "Max": [                                     0.400512785,                                    
+        0.9039919,                                     0                                
+        ]                             },                             "PlaneBoundary2D":
+        [                                 [                                     -0.400512785,                                    
+        -0.9039919                                 ],                                
+        [                                     0.400512785,                                    
+        -0.9039919                                 ],                                
+        [                                     0.400512785,                                    
+        0.9039919                                 ],                                
+        [                                     -0.400512785,                                    
+        0.9039919                                 ]                             ]                        
+        }                     ]                 }             ]         } '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3613868102660323786, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: SceneSettings.DataSource
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047981335285221976, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2e00db6d2dfa42ac8d821db8d493a44, type: 3}
+--- !u!1001 &1416325679860731587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1416325680687532416, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_Name
+      value: Helper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416325680687532422, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8a2c8cdf2a49054bae2ecb4ab1c622b, type: 3}

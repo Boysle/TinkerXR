@@ -1,0 +1,25 @@
+{
+    "name": "meta.xr.mrutilitykit",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR",
+        "Unity.AI.Navigation",
+        "Unity.TextMeshPro",
+        "Meta.XR.EnvironmentDepth"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.mrutilitykit",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

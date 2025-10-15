@@ -1,0 +1,36 @@
+{
+    "name": "meta.xr.mrutilitykit.tests",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Meta.XR.BuildingBlocks.Editor",
+        "Meta.XR.BuildingBlocks",
+        "PlayModeTests",
+        "meta.xr.mrutilitykit",
+        "meta.xr.mrutilitykit.editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Android"
+    ],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.mrutilitykit",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

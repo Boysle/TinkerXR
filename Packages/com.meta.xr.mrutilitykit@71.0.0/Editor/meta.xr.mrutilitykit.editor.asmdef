@@ -1,0 +1,29 @@
+{
+    "name": "meta.xr.mrutilitykit.editor",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR.Editor",
+        "Oculus.VR",
+        "meta.xr.mrutilitykit",
+        "UnityEditor.TestRunner",
+        "Meta.XR.BuildingBlocks.Editor",
+        "Meta.XR.EnvironmentDepth.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.mrutilitykit",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

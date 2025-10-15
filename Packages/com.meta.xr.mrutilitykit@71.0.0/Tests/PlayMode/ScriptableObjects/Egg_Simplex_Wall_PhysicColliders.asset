@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7706023244747184843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a244f32361274974b989fb470b6d50d2, type: 3}
+  m_Name: RandomMask
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efacc41b4d21cfa458fd5af8b13d5803, type: 3}
+  m_Name: Egg_Simplex_Wall_PhysicColliders
+  m_EditorClassIdentifier: 
+  Poolsize: 2000
+  decorationPrefabs:
+  - {fileID: 4046031073824736769, guid: 62663e8576654764aafcf8199c238423, type: 3}
+  executeSceneLabels: 4
+  targets: 4
+  targetPhysicsLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  placement: 0
+  placementDirection: {x: 0, y: 0, z: 1}
+  selectBehind: 1
+  rayOffset: {x: 0, y: 0, z: 0.1}
+  spawnHierarchy: 0
+  distributionType: 1
+  gridDistribution:
+    spacingX: 1
+    spacingY: 1
+  simplexDistribution:
+    pointSamplingConfig:
+      pointsPerUnitX: 0.5
+      pointsPerUnitY: 0.5
+      noiseOffsetRadius: 0
+  staggeredConcentricDistribution:
+    stepSize: 0
+  randomDistribution:
+    numPerUnit: 10
+  masks:
+  - {fileID: -7706023244747184843}
+  constraints: []
+  modifiers:
+  - {fileID: 5927542207523158093}
+  discardParentScaling: 1
+  lifetime: 0
+  DrawDebugRaysAndImpactPoints: 0
+--- !u!114 &5927542207523158093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb460de1610eb6479b3a63a1af14a0e, type: 3}
+  m_Name: ScaleModifier
+  m_EditorClassIdentifier: 
+  enabled: 1
+  x:
+    mask: {fileID: -7706023244747184843}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0
+  y:
+    mask: {fileID: -7706023244747184843}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0
+  z:
+    mask: {fileID: -7706023244747184843}
+    limitMin: -Infinity
+    limitMax: Infinity
+    scale: 0.1
+    offset: 0

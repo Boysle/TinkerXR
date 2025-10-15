@@ -1,0 +1,34 @@
+﻿#pragma kernel CopyDepth
+
+Texture2DArray<float> _EnvironmentDepthTexture;
+float _EnvironmentDepthTextureSize;
+float4 _EnvironmentDepthZBufferParams;
+RWStructuredBuffer<float> _CopiedDepthTexture;
+
+[numthreads(32, 32, 1)]
+void CopyDepth(uint3 id : SV_DispatchThreadID)
+{
+	static const uint textureSize = 128;
+	static const uint numThreads = 32;
+	static const uint iterationsPerThread = textureSize / numThreads;
+	const float downscale = _EnvironmentDepthTextureSize / textureSize;
+
+	const uint x = id.x * iterationsPerThread;
+	const uint y = id.y * iterationsPerThread;
+	for (uint i = 0; i < iterationsPerThread; i++)
+	{
+		for (uint j = 0; j < iterationsPerThread; j++)
+		{
+			[unroll]
+			for (uint eyeIndex = 0; eyeIndex < 2; eyeIndex++)
+			{
+				const uint targetIndex = x + i + (y + j) * textureSize + textureSize * textureSize * eyeIndex;
+				const float2 texCoords = float2((x + i) * downscale, (y + j) * downscale);
+				const float rawDepth = _EnvironmentDepthTexture[float3(texCoords, eyeIndex)];
+				const float ndcDepth = rawDepth * 2.0f - 1.0f;
+				const float linearDepth = (1.0f / (ndcDepth + _EnvironmentDepthZBufferParams.y)) * _EnvironmentDepthZBufferParams.x;
+				_CopiedDepthTexture[targetIndex] = linearDepth;
+			}
+		}
+	}
+}
