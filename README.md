@@ -33,4 +33,6 @@ For detailed information, demos, and publications, please visit the [TinkerXR Pr
 
 **3.** Make sure the required SDKs are installed via Unity Package Manager.
 
-**4.** Connect your Quest 3 headset and press Play to start exploring.
+**4.** Connect your Quest 3 headset and press Play on scene editor to start exploring.
+
+**5.** The system can be built on both PC or the headset itself.
