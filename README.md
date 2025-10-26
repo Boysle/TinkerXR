@@ -55,6 +55,9 @@ For detailed information, demos, and publications, please visit the [TinkerXR Pr
 #### Rectangular Prism Generator Object
 - **Rectangular Prism Generator:** Calculates the world-space bounds of currently selected objects and updates the manipulation prism's position, scale, and visibility so it tightly encloses them.
 
+#### Rotation Detector with Canvas Object
+- **Hand Rotation Detector:** Detects the hand's orientation (Up/Down/Right) using dot products and switches selection, snapping, or uniform-scaling modes and their UI indicators accordingly.
+
 #### Printer Prefab Object
 - **Printer Properties:** Handles exporting meshes to STL (local or to a server), sending slicer/print requests, parsing returned G-code into extrusion segments and rendering them, and managing print-state UI and progress.
 
