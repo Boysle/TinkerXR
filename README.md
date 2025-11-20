@@ -16,34 +16,6 @@ If you use **TinkerXR** as part of your research, you should cite it as follows:
 </p>
 <sup>TinkerXR system overview: In-situ CAD and AR-based 3D printing workflow.</sup>
 
----
-
-<p align="center">
-  <img src="docs/img/workspace_awareness.png" width="660px">
-</p>
-<sup>Spatial Awareness: TinkerXR recognizes and adapts to real-world environments for context-aware design.</sup>
-
----
-
-<p align="center">
-  <img src="docs/img/creating_objects.png" width="660px">
-</p>
-<sup>Creating Objects: Intuitive creation of 3D models using gestures and CSG primitives.</sup>
-
----
-
-<p align="center">
-  <img src="docs/img/object_manipulation_schema_transparent_bg.png" width="660px">
-</p>
-<sup>Object Manipulation Schema: Framework for translating, rotating, scaling, and combining objects in AR.</sup>
-
----
-
-<p align="center">
-  <img src="docs/img/combining_objects_ruler.png" width="660px">
-</p>
-<sup>Precision Measurement: Tools for accurate measurement and assembly of complex designs.</sup>
-
 
 ## Project Page  
 For detailed information, demos, and publications, please visit the [TinkerXR Project Page](https://tinkerxr.github.io/).
@@ -98,4 +70,32 @@ For detailed information, demos, and publications, please visit the [TinkerXR Pr
 #### Select Workspace Object
 - **Select Workspace:** Raycast to let the user point-and-pinch to select room anchors or object vertices, places/rotates the gizmo plane.
 
+
+## Feature Gallery
+
+<p align="center">
+  <img src="docs/img/workspace_awareness.png" width="660px">
+</p>
+<sup>Spatial Awareness: TinkerXR recognizes and adapts to real-world environments for context-aware design.</sup>
+
+---
+
+<p align="center">
+  <img src="docs/img/creating_objects.png" width="660px">
+</p>
+<sup>Creating Objects: Intuitive creation of 3D models using gestures and CSG primitives.</sup>
+
+---
+
+<p align="center">
+  <img src="docs/img/object_manipulation_schema_transparent_bg.png" width="660px">
+</p>
+<sup>Object Manipulation Schema: Framework for translating, rotating, scaling, and combining objects in AR.</sup>
+
+---
+
+<p align="center">
+  <img src="docs/img/combining_objects_ruler.png" width="660px">
+</p>
+<sup>Precision Measurement: Tools for accurate measurement and assembly of complex designs.</sup>
 
