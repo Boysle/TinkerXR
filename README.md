@@ -1,6 +1,6 @@
 # TinkerXR
 
-TinkerXR is an in-situ CAD and 3D printing AR interface that enables intuitive design and fabrication directly within users’ physical environments. It features spatial awareness, depth occlusion, and seamless integration with 3D printing workflows.
+[TinkerXR](https://tinkerxr.github.io/) is an in-situ CAD and 3D printing AR interface that enables intuitive design and fabrication directly within users’ physical environments. It features spatial awareness, depth occlusion, and seamless integration with 3D printing workflows.
 
 <sub>By [Oğuz Arslan](https://boysle.github.io)\*, [Artun Akdoğan](https://www.linkedin.com/in/artun-akdogan)\*, [Mustafa Doğa Doğan](https://www.dogadogan.com/)†</sub>
 
@@ -18,7 +18,7 @@ If you use **TinkerXR** as part of your research, you should cite it as follows:
 
 
 ## Project Page  
-For detailed information, demos, and publications, please visit the [TinkerXR Project Page](https://tinkerxr.github.io/).
+For detailed information, demos, and publications, please visit the [TinkerXR project page](https://tinkerxr.github.io/).
 
 ## Requirements  
 
