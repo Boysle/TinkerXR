@@ -35,13 +35,17 @@ For detailed information, demos, and publications, please visit the [TinkerXR pr
   git clone https://github.com/Boysle/TinkerXR-SCF-2025.git
   ```
 
-**2.** Open the project in Unity (recommended version above).
+**2.** Open the project in Unity (recommended version 2022.3.22f1).
+- In Unity Hub, select "Add" → "Add project from disk."
+- Select the cloned folder
 
-**3.** Make sure the required SDKs are installed via Unity Package Manager.
+**3.** The required SDKs will be installed automatically.
 
-**4.** Connect your Quest 3 headset and press Play on scene editor to start exploring.
+**4.** In Unity file system, go to Scenes, and open the XR MAIN SCENE.
 
-**5.** The system can be built on both PC or the headset itself.
+**5.** Connect your Quest 3 headset via Link and press Play on the scene editor to start exploring.
+
+**6.** The system can be built for both PC or the headset itself. (for proper use, build the .apk)
 
 ## Script Structure in the Scene
 
